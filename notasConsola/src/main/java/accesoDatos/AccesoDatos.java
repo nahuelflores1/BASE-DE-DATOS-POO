@@ -24,7 +24,7 @@ public class AccesoDatos {
 public AccesoDatos(){
 try {
    Class.forName("com.mysql.cj.jdbc.Driver");
-   conn=DriverManager.getConnection("jbdc:mysql:3306//localhost/notasQuinto,"root","");
+   conn=DriverManager.getConnection("jdbc:mysql:3306//localhost/notasQuinto", "root", "");
 
 comandos=conn.createStatement();
 
